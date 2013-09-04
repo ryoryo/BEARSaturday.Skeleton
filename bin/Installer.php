@@ -18,8 +18,6 @@ class Installer
         $commands = array(
             "chmod -R 777 {$dir}/logs/",
             "chmod -R 777 {$dir}/tmp/",
-            "chmod -R 777 {$dir}/tmp/",
-            "mv {$dir}/htdocs/htaccess.txt {$dir}/htdocs/.htaccess"
         );
         foreach($commands as $cmd) {
             $event->getIo()->write('<info>' . $cmd . '</info>');
