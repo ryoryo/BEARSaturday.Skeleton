@@ -1,3 +1,8 @@
+# This package is not maintained anymore and has been superseded. Use [BEAR.Sunday](https://bearsunday.github.io/) Instead.
+# このパッケージはメンテナンスされていません。新規のインストールを行わないでください。
+
+----
+
 BEARSaturday/Skeleton
 =====================
 ### Install via composer
