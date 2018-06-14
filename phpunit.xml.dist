@@ -3,7 +3,7 @@
          convertNoticesToExceptions="false"
          convertWarningsToExceptions="false"
          bootstrap="./tests/bootstrap.php">
-    <testsuite name="appo">
+    <testsuite name="tests">
         <directory suffix="Test.php">tests</directory>
     </testsuite>
     <php>
