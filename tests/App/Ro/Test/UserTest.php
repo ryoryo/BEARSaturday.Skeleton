@@ -34,6 +34,6 @@ class App_Ro_Test_UserTest extends \PHPUnit_Framework_TestCase
     public function testReadBody(App_Ro $ro)
     {
         $body = $ro->getBody();
-        $this->assertSame("BEAR", $body['name']);
+        $this->assertSame('BEAR', $body['name']);
     }
 }

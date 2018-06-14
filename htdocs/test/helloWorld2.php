@@ -1,27 +1,12 @@
 <?php
-/**
- * App
- *
- * @category   BEAR
- *
- * @author     $Author:$ <username@example.com>
- * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
- *
- * @link       http://@link_url@
- */
+
 require_once 'App.php';
 
 /**
  * Hello World 2
  *
- * @category   BEAR
  *
- * @author     $Author:$ <username@example.com>
  * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
  *
  * @link       http://@link_url@
  */

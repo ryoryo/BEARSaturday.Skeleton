@@ -1,29 +1,5 @@
 <?php
-/**
- * App
- *
- * @category   BEAR
- *
- * @author     $Author:$ <username@example.com>
- * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
- *
- * @link       http://@link_url@
- */
 
-/**
- * Main
- *
- * @category   BEAR
- *
- * @author     $Author:$ <username@example.com>
- * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
- *
- * @link       http://@link_url@
- */
 class App_Ro extends BEAR_Ro
 {
     /**

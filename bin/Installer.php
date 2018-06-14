@@ -1,21 +1,10 @@
 <?php
-
 namespace BEAR\Install;
 
-/*
- */
 use Composer\Script\Event;
 
-/**
- */
 class Installer
 {
-    public static function postInstall(Event $event = null)
-    {
-        self::setup($event);
-        $event->getIo()->write('<info>Thank you for using BEAR.Saturday.</info>');
-    }
-
     private static function setUp(Event $event)
     {
         $dir = dirname(__DIR__);
@@ -35,5 +24,11 @@ class Installer
         $contents = file_get_contents($htaccess);
         $contents = str_replace('@APP-DIR@', "{$dir}", $contents);
         file_put_contents($htaccess, $contents);
+    }
+
+    public static function postInstall(Event $event = null)
+    {
+        self::setup($event);
+        $event->getIo()->write('<info>Thank you for using BEAR.Saturday.</info>');
     }
 }

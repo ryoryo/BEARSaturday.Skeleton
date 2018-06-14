@@ -1,11 +1,5 @@
 <?php
-/**
- * App
- */
 
-/**
- * Sample resource
- */
 class App_Ro_Untitled extends BEAR_Ro
 {
     /**
@@ -15,9 +9,6 @@ class App_Ro_Untitled extends BEAR_Ro
      */
     private $_table = 'table';
 
-    /**
-     * Constructor
-     */
     public function __construct($config)
     {
         parent::__construct($config);
@@ -28,9 +19,10 @@ class App_Ro_Untitled extends BEAR_Ro
      *
      * @param array $values
      *
+     * @throws Panda_Exception
+     *
      * @return array
      *
-     * @throws Panda_Exception
      * @required name 名前
      * @required age  年齢
      */
@@ -64,7 +56,7 @@ class App_Ro_Untitled extends BEAR_Ro
         /* @var $extended MDB2_Extended */
         $where = 'id = ' . $this->_db->quote($values['id'], 'integer');
         $extended->autoExecute($this->_table, $values, MDB2_AUTOQUERY_UPDATE, $where);
-        if (!isset($values['profile'])) {
+        if (! isset($values['profile'])) {
             return;
         }
         // profile
@@ -72,7 +64,7 @@ class App_Ro_Untitled extends BEAR_Ro
         $where = 'user_id = ' . $this->_db->quote($values['id'], 'integer');
         $params['updated_at'] = _BEAR_DATETIME;
         $result = $extended->autoExecute(App_DB::TABLE_PROFILE, $params, MDB2_AUTOQUERY_UPDATE, $where);
-        if (!$result) {
+        if (! $result) {
             // updateできなかったらinsert
             unset($params['updated_at']);
             $params['user_id'] = $this->_db->quote($values['id'], 'integer');
@@ -94,7 +86,7 @@ class App_Ro_Untitled extends BEAR_Ro
     public function onRead($values)
     {
         //db
-        $where = isset($values['id']) ? ' WHERE id = ' . $this->_db->quote($values['id'], 'integer') : "";
+        $where = isset($values['id']) ? ' WHERE id = ' . $this->_db->quote($values['id'], 'integer') : '';
         $sql = "SELECT * FROM {$this->_table}{$where}";
         if (isset($values['id'])) {
             $result = $this->_db->queryRow($sql);

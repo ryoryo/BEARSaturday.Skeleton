@@ -1,5 +1,6 @@
 <?php
-// for test
+
+
 $_SERVER['bearmode'] = 100;
 
 ini_set('display_errors', '1');
@@ -25,7 +26,7 @@ ini_set('default_charset', 'none');
 //time zone
 ini_set('date.timezone', 'Asia/Tokyo');
 
-$loader = require dirname(__DIR__) . '/vendor/autoload.php';
+$loader = include dirname(__DIR__) . '/vendor/autoload.php';
 /* @var $loader \Composer\Autoload\ClassLoader */
 $loader->add('', __DIR__);
 $loader->register();

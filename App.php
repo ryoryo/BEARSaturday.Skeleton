@@ -1,21 +1,10 @@
 <?php
-/**
- * App
- *
- * @category BEAR
- *
- * @author   $Author:$ <username@example.com>
- * @license  @license@ http://@license_url@
- *
- * @version  Release: @package_version@ $Id:$
- *
- * @link     http://@link_url@
- */
+
 
 /**
  * App root path
  */
-define('_BEAR_APP_HOME', realpath(dirname(__FILE__)));
+define('_BEAR_APP_HOME', realpath(__DIR__));
 
 // composer auto load
 require_once __DIR__ . '/vendor/autoload.php';
@@ -29,12 +18,8 @@ App::init($bearMode);
 /**
  * App
  *
- * @category   BEAR
  *
- * @author     $Author:$ <username@example.com>
  * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
  *
  * @link       http://@link_url@
  */
@@ -49,10 +34,11 @@ class App
     {
         $app = BEAR::loadConfig(_BEAR_APP_HOME . '/App/app.yml');
         switch ($bearMode) {
-            case 1 :
+            case 1:
                 //debug mode (cache disabled)
                 $app['BEAR_Cache']['adapter'] = 0;
-            case 2 :
+                // no break
+            case 2:
                 //debug mode (cache enabled)
                 $app['core']['debug'] = true;
                 $app['App_Db']['dsn']['default'] = $app['App_Db']['dsn']['slave'] = $app['App_Db']['dsn']['test'];
@@ -64,8 +50,8 @@ class App
                 $app['App_Db']['dsn']['default'] = $app['App_Db']['dsn']['slave'] = $app['App_Db']['dsn']['test'];
                 $app['BEAR_Resource_Request']['__class'] = 'BEAR_Resource_Request_Test';
                 break;
-            case 0 :
-            default :
+            case 0:
+            default:
                 // live
                 $app['core']['debug'] = false;
                 break;
