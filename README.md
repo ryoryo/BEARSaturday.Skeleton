@@ -13,6 +13,11 @@ BEAR.Saturdayが依存する[PEARのパッケージ](https://pear.php.net/packag
 
 BEARSaturday/Skeleton
 =====================
+
+### Requierement 
+
+PHP 5.2 - 7.2
+
 ### Install via composer
 
 ```
