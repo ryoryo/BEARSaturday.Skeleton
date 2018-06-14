@@ -15,24 +15,14 @@ $bearMode = isset($_SERVER['bearmode']) ? $_SERVER['bearmode'] : 0;
 
 App::init($bearMode);
 
-/**
- * App
- *
- *
- * @license    @license@ http://@license_url@
- *
- * @link       http://@link_url@
- */
 class App
 {
     /**
-     * App init
-     *
      * @param int $bearMode
      */
     public static function init($bearMode = 1)
     {
-        $app = BEAR::loadConfig(_BEAR_APP_HOME . '/App/app.yml');
+        $app = BEAR::loadConfig(__DIR__ . '/App/app.yml');
         switch ($bearMode) {
             case 1:
                 //debug mode (cache disabled)
