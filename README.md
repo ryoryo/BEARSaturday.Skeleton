@@ -1,7 +1,7 @@
-# This package is not maintained anymore and has been superseded. Use [BEAR.Sunday](https://bearsunday.github.io/) Instead.
-# このパッケージはメンテナンスされていません。新規インストールは推奨されません。
+# This package is deprecated. Use [BEAR.Sunday](https://bearsunday.github.io/) Instead.
+## このパッケージの新規インストールは推奨されません。
 
-BEAR.Saturdayが依存する[PEARのパッケージ](https://pear.php.net/packages.php)のいくつかもメンテナンスされていません。
+BEAR.Saturdayが依存する[PEARのパッケージ](https://pear.php.net/packages.php)のいくつかもメンテナンスされていません
  
  * Net_UserAgent_Mobile
  * XML_RSS
@@ -17,6 +17,12 @@ BEARSaturday/Skeleton
 
 ```
 composer create-project bearsaturday/skeleton your-project-name
+```
+
+### test
+
+```
+./vendor/bin/phpunit
 ```
 
 ### Structure
