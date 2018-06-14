@@ -99,7 +99,6 @@ return \PhpCsFixer\Config::create()
         'psr0' => true,
         'psr4' => true,
         'random_api_migration' => true,
-        'return_type_declaration' =>  ['space_before' => 'one'],
         'self_accessor' => true,
         'short_scalar_cast' => true,
 //      'silenced_deprecation_error' => true,
@@ -120,6 +119,7 @@ return \PhpCsFixer\Config::create()
     ->setLineEnding("\n")
     ->setFinder(
         PhpCsFixer\Finder::create()
-            ->exclude('vendors')
-            ->in(__DIR__ )
+            ->exclude('vendor')
+            ->in(__DIR__ . '/App')
+            ->in(__DIR__ . '/htdocs')
     );
