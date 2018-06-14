@@ -1,6 +1,8 @@
 <?php
 
-class App_Ro_Test_UserTest extends \PHPUnit\Framework\TestCase
+use PHPUnit\Framework\TestCase;
+
+class App_Ro_Test_UserTest extends TestCase
 {
     /**
      * @var BEAR_Resource
