@@ -17,6 +17,13 @@ class App_Ro extends BEAR_Ro
     protected $_db;
 
     /**
+     * テーブル名
+     *
+     * @var string
+     */
+    protected $_table;
+
+    /**
      * Query
      *
      * @var BEAR_Query

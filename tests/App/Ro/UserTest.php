@@ -1,6 +1,8 @@
 <?php
 
-class App_Ro_Test_UserTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class App_Ro_Test_UserTest extends TestCase
 {
     /**
      * @var BEAR_Resource
@@ -13,7 +15,7 @@ class App_Ro_Test_UserTest extends \PHPUnit_Framework_TestCase
         parent::setUp();
     }
 
-    public function testReadCode()
+    public function testCode()
     {
         $params = [
             'uri' => 'Test/User',
@@ -27,9 +29,7 @@ class App_Ro_Test_UserTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @param App_Ro $ro
-     *
-     * @depends testReadCode
+     * @depends testCode
      */
     public function testReadBody(App_Ro $ro)
     {

@@ -76,6 +76,6 @@ App_Main:
 
 App_Db:
   dsn:
-    default: 'mysql://root:@localhost/bear_demo'
-    slave  : 'mysql://root:@localhost/bear_demo'
-    test   : 'mysql://root:@localhost/bear_demo'
+    default: 'mysqli://root:@localhost/bear_demo'
+    slave  : 'mysqli://root:@localhost/bear_demo'
+    test   : 'mysqli://root:@localhost/bear_demo'
