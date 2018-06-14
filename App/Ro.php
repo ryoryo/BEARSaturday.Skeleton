@@ -22,7 +22,7 @@ class App_Ro extends BEAR_Ro
      * @var string
      */
     protected $_table;
-    
+
     /**
      * Query
      *
