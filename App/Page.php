@@ -1,49 +1,17 @@
 <?php
-/**
- * App
- *
- * @category   BEAR
- *
- * @author     $Author:$ <username@example.com>
- * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
- *
- * @link       http://@link_url@
- */
 
-/**
- * Page
- *
- * @category   BEAR
- *
- * @author     $Author:$ <username@example.com>
- * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
- *
- * @link       http://@link_url@
- * @abstract
- */
 abstract class App_Page extends BEAR_Page
 {
     /**
-     *  セッション
-     *
      * @var BEAR_Session
      */
     protected $_session;
 
     /**
-     * リソースアクセス
-     *
      * @var BEAR_Resource
      */
     protected $_resource;
 
-    /**
-     * Inject
-     */
     public function onInject()
     {
         parent::onInject();
@@ -51,33 +19,22 @@ abstract class App_Page extends BEAR_Page
         $this->_resource = BEAR::dependency('BEAR_Resource');
     }
 
-    /**
-     * 出力
-     */
     public function onOutput()
     {
         $this->display();
     }
 
-    /**
-     * 例外
-     *
-     * @throws $e 受け取った例外
-     */
     public function onException(Exception $e)
     {
         try {
             throw $e;
         } catch (App_Session_Exception $e) {
             // セッションタイムアウト
-//            $this->display('/session/timeout.tpl');
-//            $this->end();
+            //            $this->display('/session/timeout.tpl');
+            //            $this->end();
         }
     }
 
-    /**
-     * セッションタイムアウト
-     */
     public function onSessionTimeout()
     {
     }

@@ -1,15 +1,5 @@
 <?php
-/**
- * App
- */
 
-/**
- * スタティクファイルリソース
- *
- * アプリケーション作製のリソースサンプルです。
- * app://self/path/to/fileと指定されたファイルの中身をリソースbodyとして扱います。
- * ML, YAML, CSV, INIファイルをサポートしています。
- */
 class App_Resource_Execute_App extends BEAR_Resource_Execute_Adapter
 {
     /**
@@ -30,9 +20,9 @@ class App_Resource_Execute_App extends BEAR_Resource_Execute_Adapter
     /**
      * リソースアクセス
      *
-     * @return mixed
-     *
      * @throws BEAR_Resource_Exception 読めなかった時の例外
+     *
+     * @return mixed
      */
     public function request()
     {

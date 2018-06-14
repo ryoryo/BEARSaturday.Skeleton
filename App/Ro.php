@@ -1,29 +1,5 @@
 <?php
-/**
- * App
- *
- * @category   BEAR
- *
- * @author     $Author:$ <username@example.com>
- * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
- *
- * @link       http://@link_url@
- */
 
-/**
- * Main
- *
- * @category   BEAR
- *
- * @author     $Author:$ <username@example.com>
- * @license    @license@ http://@license_url@
- *
- * @version    Release: @package_version@ $Id:$
- *
- * @link       http://@link_url@
- */
 class App_Ro extends BEAR_Ro
 {
     /**
@@ -39,6 +15,13 @@ class App_Ro extends BEAR_Ro
      * @var BEAR_MDB2
      */
     protected $_db;
+
+    /**
+     * テーブル名
+     *
+     * @var string
+     */
+    protected $_table;
 
     /**
      * Query

@@ -14,3 +14,4 @@ logs/*
 *.tpl.php
 composer.phar
 vendor
+.php_cs.cache
