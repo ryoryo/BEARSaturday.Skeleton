@@ -3,15 +3,16 @@
          convertNoticesToExceptions="false"
          convertWarningsToExceptions="false"
          bootstrap="./tests/bootstrap.php">
-<testsuite name="appo">
-    <directory suffix="Test.php">tests</directory>
-</testsuite>
-<php>
-    <ini name="error_reporting" value="-1" />
-</php>
-<filter>
-    <whitelist processUncoveredFilesFromWhitelist="true">
-        <directory suffix=".php">src</directory>
-    </whitelist>
-</filter>
+    <testsuite name="appo">
+        <directory suffix="Test.php">tests</directory>
+    </testsuite>
+    <php>
+        <ini name="error_reporting" value="-1" />
+    </php>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">App</directory>
+            <directory suffix=".php">htdocs</directory>
+        </whitelist>
+    </filter>
 </phpunit>
