@@ -30,8 +30,128 @@
     },
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.php.net"
+            "type":"package",
+            "package": {
+                "name": "pear/xml_rpc",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/XML_RPC.git",
+                    "type": "git",
+                    "reference":"trunk"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "pear/mdb2",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/MDB2.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "pear/var_dump",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/Var_Dump.git",
+                    "type": "git",
+                    "reference":"trunk"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "pear/config",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/Config.git",
+                    "type": "git",
+                    "reference":"trunk"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "pear/file",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/File.git",
+                    "type": "git",
+                    "reference":"trunk"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "pear/console_color",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/Console_Color.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "pear/file_searchreplace",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/File_SearchReplace.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "pear/html_css",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/HTML_CSS.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"git",
+            "url": "https://github.com/pear/I18N_UnicodeString"
+        },
+        {
+            "type":"git",
+            "url": "https://github.com/pear/XML_RSS"
+        },
+        {
+            "type":"git",
+            "url": "https://github.com/pear/HTML_CSS"
+        },
+        {
+            "type":"git",
+            "url": "https://github.com/pear/Net_Server"
+        },
+        {
+            "type":"git",
+            "url": "https://github.com/pear/Services_JSON"
+        },
+        {
+            "type":"git",
+            "url": "https://github.com/pear/Console_Color"
+        },
+        {
+            "type":"git",
+            "url": "https://github.com/pear/HTTP_Session2"
         }
     ],
     "minimum-stability": "dev",
