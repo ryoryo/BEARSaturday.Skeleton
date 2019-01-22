@@ -161,7 +161,8 @@
     ],
     "autoload": {
         "classmap": [
-            "App"
+            "App",
+            "vendor/pear"
         ],
         "files": ["bin/Installer.php"]
     },
