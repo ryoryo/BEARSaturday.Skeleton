@@ -126,6 +126,18 @@
             }
         },
         {
+            "type":"package",
+            "package": {
+                "name": "pear/net_useragent_mobile",
+                "version":"master",
+                "source": {
+                    "url": "https://github.com/pear/Net_UserAgent_Mobile.git",
+                    "type": "git",
+                    "reference":"trunk"
+                }
+            }
+        },
+        {
             "type":"git",
             "url": "https://github.com/pear/I18N_UnicodeString"
         },
