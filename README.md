@@ -1,23 +1,31 @@
-BEARSaturday/Skeleton
-=====================
+# BEARSaturday/Skeleton
 
-### Requierement 
+# Notice:
 
-PHP 5.2 - 7.2
+ * This package is deprecated. Use [BEAR.Sunday](https://bearsunday.github.io/) Instead.
+ * このパッケージの新規インストールは推奨されません。
 
-### Install via composer
+BEAR.Saturdayが依存する[PEARのパッケージ](https://pear.php.net/packages.php)のいくつかはメンテナンスされていません
+
+ * Net_UserAgent_Mobile
+ * XML_RSS
+ * Console_Color
+ * File_SearchReplace
+ * Net_Server
+
+## Install via composer
 
 ```
 composer create-project bearsaturday/skeleton your-project-name
 ```
 
-### test
+## Test
 
 ```
 ./vendor/bin/phpunit
 ```
 
-### Structure
+## Structure
 
     /path/to/your/project
         |
@@ -34,22 +42,3 @@ composer create-project bearsaturday/skeleton your-project-name
         +--- App.php
         +--- composer.json
         +--- phpunit.xml.dist
----
-
-## Notice:
- 
- * This package is deprecated. Use [BEAR.Sunday](https://bearsunday.github.io/) Instead.
- * このパッケージの新規インストールは推奨されません。
-
-BEAR.Saturdayが依存する[PEARのパッケージ](https://pear.php.net/packages.php)のいくつかはメンテナンスされていません
- 
- * Net_UserAgent_Mobile
- * XML_RSS
- * Console_Color
- * File_SearchReplace
- * Net_Server
-
-----
-
-
-
