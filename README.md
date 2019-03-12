@@ -1,23 +1,18 @@
-BEARSaturday/Skeleton
-=====================
+# BEARSaturday/Skeleton
 
-### Requierement 
-
-PHP 5.2 - 7.2
-
-### Install via composer
+## Install via composer
 
 ```
 composer create-project bearsaturday/skeleton your-project-name
 ```
 
-### test
+## test
 
 ```
 ./vendor/bin/phpunit
 ```
 
-### Structure
+## Structure
 
     /path/to/your/project
         |
@@ -48,8 +43,3 @@ BEAR.Saturdayが依存する[PEARのパッケージ](https://pear.php.net/packag
  * Console_Color
  * File_SearchReplace
  * Net_Server
-
-----
-
-
-
