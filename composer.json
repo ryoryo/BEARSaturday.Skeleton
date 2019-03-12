@@ -169,7 +169,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "include-path": [
-        "./"
+        "./",
+        "./vendor/pear/net_useragent_mobile/"
     ],
     "autoload": {
         "classmap": [
